@@ -1,0 +1,26 @@
+uuid: c210607a-ffb3-44ad-b57c-ccc07b99eb1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.bibcite_contributor.field_bibcite_orgx_member_tref
+  module:
+    - bibcite_entity
+id: bibcite_contributor.bibcite_contributor.field_bibcite_orgx_member_tref
+field_name: field_bibcite_orgx_member_tref
+entity_type: bibcite_contributor
+bundle: bibcite_contributor
+label: 'Member Orgs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: bibcite_org_extras_taxref_view
+      display_name: entity_reference_bibcite_org_taxref
+      arguments: {  }
+field_type: entity_reference

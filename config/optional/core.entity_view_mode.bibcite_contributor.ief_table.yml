@@ -1,0 +1,10 @@
+uuid: 8ad20448-66c4-4d1b-8540-cbb28e098e4a
+langcode: en
+status: true
+dependencies:
+  module:
+    - bibcite_entity
+id: bibcite_contributor.ief_table
+label: 'Inline Entity Form Table'
+targetEntityType: bibcite_contributor
+cache: true

@@ -1,0 +1,8 @@
+uuid: 1dc2a742-af65-47e8-9738-be5d3a7d4402
+langcode: en
+status: true
+dependencies: {  }
+name: 'Bibcite Contributor Orgs'
+vid: bibcite_contributor_org
+description: 'Orgs to which Bibcite contributors belong'
+weight: 0

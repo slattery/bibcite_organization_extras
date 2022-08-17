@@ -1,0 +1,209 @@
+uuid: 63a6d883-7ced-4110-9a1f-3f91e9285ea6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.bibcite_contributor.non_member_analog
+    - field.field.bibcite_contributor.bibcite_contributor.field_bibcite_orgx_analog_bool
+    - field.field.bibcite_contributor.bibcite_contributor.field_bibcite_orgx_member_href
+    - field.field.bibcite_contributor.bibcite_contributor.field_bibcite_orgx_member_nref
+    - field.field.bibcite_contributor.bibcite_contributor.field_bibcite_orgx_member_tref
+    - field.field.bibcite_contributor.bibcite_contributor.field_bibcite_orgx_member_uref
+    - field.field.bibcite_contributor.bibcite_contributor.field_orgx_analog_cref
+    - field.field.bibcite_contributor.bibcite_contributor.field_yse_profile_ref
+  module:
+    - bibcite_entity
+    - entity_browser_entity_form
+    - entity_form_field_label
+    - field_group
+    - inline_entity_form
+    - link
+third_party_settings:
+  field_group:
+    group_orgx_member_fields:
+      children:
+        - field_yse_profile_ref
+        - field_bibcite_orgx_member_uref
+        - field_bibcite_orgx_member_nref
+        - field_bibcite_orgx_member_tref
+        - field_bibcite_orgx_member_href
+        - field_orgx_analog_cref
+      label: 'Member Fields'
+      region: content
+      parent_name: ''
+      weight: 11
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: "Fields for Organization Members, identify with an org, connect to a profile, etc.\r\n\r\nIf you add orgs or link a profile, please add this character to the Nickname field: *"
+        required_fields: true
+    group_orgx_nonmember_analog:
+      children:
+        - field_bibcite_orgx_analog_bool
+      label: 'Non Member Analog Role'
+      region: content
+      parent_name: ''
+      weight: 10
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: "This box should only be checked if this contributor will be a placeholder for an external contributor who shares the same name as an organization member.\r\n\r\nIf you check this box, please add this character to the Nickname field: †"
+        required_fields: true
+id: bibcite_contributor.bibcite_contributor.default
+targetEntityType: bibcite_contributor
+bundle: bibcite_contributor
+mode: default
+content:
+  field_bibcite_orgx_analog_bool:
+    type: boolean_checkbox
+    weight: 17
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_bibcite_orgx_member_href:
+    type: link_default
+    weight: 13
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_bibcite_orgx_member_nref:
+    type: entity_reference_autocomplete
+    weight: 11
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_bibcite_orgx_member_tref:
+    type: entity_reference_autocomplete
+    weight: 12
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_bibcite_orgx_member_uref:
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_orgx_analog_cref:
+    type: inline_entity_form_complex
+    weight: 14
+    region: content
+    settings:
+      form_mode: non_member_analog
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: true
+      collapsed: true
+      revision: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+      entity_form_field_label:
+        new_label: ''
+        rewrite_label: 0
+  field_yse_profile_ref:
+    type: entity_reference_autocomplete
+    weight: 9
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  first_name:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  last_name:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  leading_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  middle_name:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: bibcite_parse_name
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  nick:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  prefix:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  suffix:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,30 @@
+uuid: 16d4d4b0-63c3-4f60-8e4f-bd7ea98c7f47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.bibcite_contributor.field_yse_profile_ref
+    - node.type.yse_detail_profile
+  module:
+    - bibcite_entity
+id: bibcite_contributor.bibcite_contributor.field_yse_profile_ref
+field_name: field_yse_profile_ref
+entity_type: bibcite_contributor
+bundle: bibcite_contributor
+label: Profile
+description: 'Link one profile to this contributor record.   You can link many contributor records to the same profile, to keep track of various spellings, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      yse_detail_profile: yse_detail_profile
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

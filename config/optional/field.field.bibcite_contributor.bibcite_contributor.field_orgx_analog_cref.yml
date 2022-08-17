@@ -1,0 +1,27 @@
+uuid: 54ead2ef-3af9-4d06-a448-f0d193476dca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.bibcite_contributor.field_orgx_analog_cref
+  module:
+    - bibcite_entity
+id: bibcite_contributor.bibcite_contributor.field_orgx_analog_cref
+field_name: field_orgx_analog_cref
+entity_type: bibcite_contributor
+bundle: bibcite_contributor
+label: 'Member Analog Ref'
+description: 'The non-member analog contributor functions when a ref has an external contributor with the same name.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:bibcite_contributor'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

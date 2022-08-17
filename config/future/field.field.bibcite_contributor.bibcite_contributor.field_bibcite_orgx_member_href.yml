@@ -1,0 +1,23 @@
+uuid: ee6c9eb7-549b-43ad-9976-5f9f2aa25cb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.bibcite_contributor.field_bibcite_orgx_member_href
+  module:
+    - bibcite_entity
+    - link
+id: bibcite_contributor.bibcite_contributor.field_bibcite_orgx_member_href
+field_name: field_bibcite_orgx_member_href
+entity_type: bibcite_contributor
+bundle: bibcite_contributor
+label: 'Member Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 16
+field_type: link

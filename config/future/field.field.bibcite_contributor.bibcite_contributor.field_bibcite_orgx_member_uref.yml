@@ -1,0 +1,30 @@
+uuid: c528459f-7e4a-4b9e-9c6c-ab4f593e084c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.bibcite_contributor.field_bibcite_orgx_member_uref
+  module:
+    - bibcite_entity
+id: bibcite_contributor.bibcite_contributor.field_bibcite_orgx_member_uref
+field_name: field_bibcite_orgx_member_uref
+entity_type: bibcite_contributor
+bundle: bibcite_contributor
+label: 'Member Account'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: false
+field_type: entity_reference

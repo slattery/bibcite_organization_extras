@@ -1,0 +1,10 @@
+name: 'Bibliography & Citation - Organization Extras'
+type: module
+description: Manage organization affiliation for contributors and reference-contributor relations
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: Bibliography & Citation
+dependencies:
+  - bibcite:bibcite
+  - bibcite:bibcite_entity
+  - bibcite:bibcite_import

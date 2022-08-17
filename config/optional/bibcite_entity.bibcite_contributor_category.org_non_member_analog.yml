@@ -1,0 +1,7 @@
+uuid: e565f15e-07d5-4ad0-bf8f-270c572ffa20
+langcode: en
+status: true
+dependencies: {  }
+id: org_non_member_analog
+label: 'Org Non-Member Analog'
+weight: -3

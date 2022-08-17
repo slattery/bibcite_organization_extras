@@ -1,0 +1,20 @@
+uuid: 899f7535-7f17-44f2-be19-7e69ee5b7f50
+langcode: en
+status: true
+dependencies:
+  module:
+    - bibcite_entity
+    - node
+id: bibcite_contributor.field_yse_profile_ref
+field_name: field_yse_profile_ref
+entity_type: bibcite_contributor
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

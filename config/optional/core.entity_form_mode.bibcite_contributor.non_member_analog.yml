@@ -1,0 +1,10 @@
+uuid: f791c967-75e0-4e13-a53e-5c0f38e1d3da
+langcode: en
+status: true
+dependencies:
+  module:
+    - bibcite_entity
+id: bibcite_contributor.non_member_analog
+label: 'Non Member Analog'
+targetEntityType: bibcite_contributor
+cache: true

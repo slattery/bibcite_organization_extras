@@ -1,0 +1,113 @@
+uuid: 850cff2e-1be7-4057-8fa6-2ec51aa1f341
+langcode: en
+status: true
+dependencies: {  }
+id: yse_publications
+label: 'YSE Publications'
+code: |-
+  .article--info.publication--details {
+    border-top: 0px solid transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .article--info.publication--details:nth-of-type(1) {
+      margin-top: 1.5rem;
+  }
+
+
+  .article--info.publication--details .eyebrow {
+    font-size: .875rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 3px;
+  }
+
+
+  .article--info.publication--details a {
+      color: rgba(0,0,0,0.87);
+  }
+
+
+  .article--info__about.article--info__fullwidth {
+    width: 100%;
+  }
+
+
+  .listing.listing--publications {
+      margin-top: 2rem;
+  }
+
+  .listing.listing--publications .views-exposed-form .form-actions {
+      margin-top: .5rem;
+  }
+
+  .listing--publications h3 {
+      font-size: 1.75rem;
+      font-weight: normal;
+      line-height: 1.4;
+      border-bottom: 1px solid #DDD;
+      margin-bottom: 1rem;
+  }
+
+  .listing--publications .results-count {
+      font-family: mallory-compact-light,Gill Sans,Gill Sans MT,Calibri,Arial,sans-serif;
+      list-style: none;
+      font-size: 1rem;
+      line-height: 1.35;
+      margin-top: 2rem;
+  }
+
+  ul.yse-publications {
+      font-family: mallory-compact-light,Gill Sans,Gill Sans MT,Calibri,Arial,sans-serif;
+      list-style: none;
+      font-size: 1rem;
+      line-height: 1.35;
+  }
+
+  ul.yse-publications li {
+    display: flex;
+        -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  ul.yse-publications li>div {
+    padding-top: 0.25rem;
+  }
+
+  ul.yse-publications li div.pub--datestring {
+    
+      min-width: 6.25rem;
+      flex: 1;
+      
+      max-width: 7rem;
+      text-align: right;
+     /* padding-right: 1rem; */
+  }
+
+  ul.yse-publications li div.pub--journal {
+     /* min-width: 20rem; */
+      flex: 2;
+  }
+
+  ul.yse-publications li div.pub--title {
+    padding-right: 1rem;
+    min-width: 20rem;
+    flex: 3;
+    font-weight: 600;
+    font-family: mallory-compact,"Gill Sans","Gill Sans MT",Calibri,Arial,sans-serif;
+    color: #00356B;
+  }
+
+  /*
+  // @media print,screen and (max-width:48em){
+  //  ul.yse-publications li div.pub--datestring {
+  //    text-align: left;
+  //  }
+  // }
+  */
+media: all
+preprocess: false
+conditions: {  }
+contexts: {  }
+conditions_require_all: true
